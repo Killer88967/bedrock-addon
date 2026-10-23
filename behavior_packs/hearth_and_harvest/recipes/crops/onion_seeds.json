@@ -1,0 +1,23 @@
+{
+  "format_version": "1.26.50",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hh:onion_seeds_from_onion"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "hh:onion"
+      }
+    ],
+    "ingredients": [
+      {
+        "item": "hh:onion"
+      }
+    ],
+    "result": {
+      "item": "hh:onion_seeds",
+      "count": 1
+    }
+  }
+}

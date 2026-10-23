@@ -1,0 +1,23 @@
+{
+  "format_version": "1.26.50",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hh:lettuce_seeds_from_lettuce"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "hh:lettuce"
+      }
+    ],
+    "ingredients": [
+      {
+        "item": "hh:lettuce"
+      }
+    ],
+    "result": {
+      "item": "hh:lettuce_seeds",
+      "count": 1
+    }
+  }
+}

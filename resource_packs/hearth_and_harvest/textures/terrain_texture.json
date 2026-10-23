@@ -4,9 +4,65 @@
   "padding": 8,
   "num_mip_levels": 4,
   "texture_data": {
-    "hh_tomato_crop_stage_0": { "textures": "textures/blocks/crops/tomato_stage_0" },
-    "hh_tomato_crop_stage_1": { "textures": "textures/blocks/crops/tomato_stage_1" },
-    "hh_tomato_crop_stage_2": { "textures": "textures/blocks/crops/tomato_stage_2" },
-    "hh_tomato_crop_stage_3": { "textures": "textures/blocks/crops/tomato_stage_3" }
+    "hh_tomato_crop_stage_0": {
+      "textures": "textures/blocks/crops/tomato_stage_0"
+    },
+    "hh_tomato_crop_stage_1": {
+      "textures": "textures/blocks/crops/tomato_stage_1"
+    },
+    "hh_tomato_crop_stage_2": {
+      "textures": "textures/blocks/crops/tomato_stage_2"
+    },
+    "hh_tomato_crop_stage_3": {
+      "textures": "textures/blocks/crops/tomato_stage_3"
+    },
+    "hh_onion_crop_stage_0": {
+      "textures": "textures/blocks/crops/onion_stage_0"
+    },
+    "hh_onion_crop_stage_1": {
+      "textures": "textures/blocks/crops/onion_stage_1"
+    },
+    "hh_onion_crop_stage_2": {
+      "textures": "textures/blocks/crops/onion_stage_2"
+    },
+    "hh_onion_crop_stage_3": {
+      "textures": "textures/blocks/crops/onion_stage_3"
+    },
+    "hh_lettuce_crop_stage_0": {
+      "textures": "textures/blocks/crops/lettuce_stage_0"
+    },
+    "hh_lettuce_crop_stage_1": {
+      "textures": "textures/blocks/crops/lettuce_stage_1"
+    },
+    "hh_lettuce_crop_stage_2": {
+      "textures": "textures/blocks/crops/lettuce_stage_2"
+    },
+    "hh_lettuce_crop_stage_3": {
+      "textures": "textures/blocks/crops/lettuce_stage_3"
+    },
+    "hh_strawberry_crop_stage_0": {
+      "textures": "textures/blocks/crops/strawberry_stage_0"
+    },
+    "hh_strawberry_crop_stage_1": {
+      "textures": "textures/blocks/crops/strawberry_stage_1"
+    },
+    "hh_strawberry_crop_stage_2": {
+      "textures": "textures/blocks/crops/strawberry_stage_2"
+    },
+    "hh_strawberry_crop_stage_3": {
+      "textures": "textures/blocks/crops/strawberry_stage_3"
+    },
+    "hh_peanut_crop_stage_0": {
+      "textures": "textures/blocks/crops/peanut_stage_0"
+    },
+    "hh_peanut_crop_stage_1": {
+      "textures": "textures/blocks/crops/peanut_stage_1"
+    },
+    "hh_peanut_crop_stage_2": {
+      "textures": "textures/blocks/crops/peanut_stage_2"
+    },
+    "hh_peanut_crop_stage_3": {
+      "textures": "textures/blocks/crops/peanut_stage_3"
+    }
   }
 }

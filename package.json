@@ -11,6 +11,8 @@
     "build": "just-scripts build",
     "build:production": "just-scripts build --production",
     "clean": "just-scripts clean",
+    "gen:crops": "node tools/gen-crops.mjs && prettier --write behavior_packs resource_packs --log-level warn",
+    "gen:textures": "node tools/gen-placeholder-textures.mjs",
     "mcaddon": "just-scripts mcaddon",
     "mcaddon:production": "just-scripts mcaddon --production"
   },

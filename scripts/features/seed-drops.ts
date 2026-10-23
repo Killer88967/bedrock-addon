@@ -4,7 +4,11 @@ import { NS } from "../constants";
 
 /** Seeds that can drop when a player breaks grass, with their drop chance. */
 const GRASS_SEEDS: { item: string; chance: number }[] = [
-  { item: `${NS}:tomato_seeds`, chance: 0.05 },
+  { item: `${NS}:tomato_seeds`, chance: 0.025 },
+  { item: `${NS}:onion_seeds`, chance: 0.025 },
+  { item: `${NS}:lettuce_seeds`, chance: 0.025 },
+  { item: `${NS}:strawberry_seeds`, chance: 0.025 },
+  { item: `${NS}:peanut_seeds`, chance: 0.025 },
 ];
 
 const GRASS_BLOCKS: string[] = [

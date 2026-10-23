@@ -9,12 +9,22 @@
       }
     },
     "components": {
-      "minecraft:icon": { "textures": { "default": "hh_tomato_seeds" } },
+      "minecraft:icon": {
+        "textures": {
+          "default": "hh_tomato_seeds"
+        }
+      },
       "minecraft:block_placer": {
         "block": "hh:tomato_crop",
-        "use_on": [{ "name": "minecraft:farmland" }]
+        "use_on": [
+          {
+            "name": "minecraft:farmland"
+          }
+        ]
       },
-      "minecraft:compostable": { "composting_chance": 30 }
+      "minecraft:compostable": {
+        "composting_chance": 30
+      }
     }
   }
 }

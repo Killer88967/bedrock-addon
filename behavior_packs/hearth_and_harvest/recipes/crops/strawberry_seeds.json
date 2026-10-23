@@ -1,0 +1,23 @@
+{
+  "format_version": "1.26.50",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hh:strawberry_seeds_from_strawberry"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "hh:strawberry"
+      }
+    ],
+    "ingredients": [
+      {
+        "item": "hh:strawberry"
+      }
+    ],
+    "result": {
+      "item": "hh:strawberry_seeds",
+      "count": 2
+    }
+  }
+}

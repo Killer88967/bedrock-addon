@@ -2,7 +2,35 @@
   "resource_pack_name": "hearth_and_harvest",
   "texture_name": "atlas.items",
   "texture_data": {
-    "hh_tomato": { "textures": "textures/items/foods/tomato" },
-    "hh_tomato_seeds": { "textures": "textures/items/crops/tomato_seeds" }
+    "hh_tomato": {
+      "textures": "textures/items/foods/tomato"
+    },
+    "hh_tomato_seeds": {
+      "textures": "textures/items/crops/tomato_seeds"
+    },
+    "hh_onion": {
+      "textures": "textures/items/foods/onion"
+    },
+    "hh_onion_seeds": {
+      "textures": "textures/items/crops/onion_seeds"
+    },
+    "hh_lettuce": {
+      "textures": "textures/items/foods/lettuce"
+    },
+    "hh_lettuce_seeds": {
+      "textures": "textures/items/crops/lettuce_seeds"
+    },
+    "hh_strawberry": {
+      "textures": "textures/items/foods/strawberry"
+    },
+    "hh_strawberry_seeds": {
+      "textures": "textures/items/crops/strawberry_seeds"
+    },
+    "hh_peanut": {
+      "textures": "textures/items/foods/peanut"
+    },
+    "hh_peanut_seeds": {
+      "textures": "textures/items/crops/peanut_seeds"
+    }
   }
 }

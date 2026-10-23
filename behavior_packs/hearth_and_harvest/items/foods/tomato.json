@@ -9,11 +9,23 @@
       }
     },
     "components": {
-      "minecraft:icon": { "textures": { "default": "hh_tomato" } },
-      "minecraft:food": { "nutrition": 3, "saturation_modifier": 0.6 },
-      "minecraft:use_modifiers": { "use_duration": 1.6, "movement_modifier": 0.35 },
+      "minecraft:icon": {
+        "textures": {
+          "default": "hh_tomato"
+        }
+      },
+      "minecraft:food": {
+        "nutrition": 3,
+        "saturation_modifier": 0.6
+      },
+      "minecraft:use_modifiers": {
+        "use_duration": 1.6,
+        "movement_modifier": 0.35
+      },
       "minecraft:use_animation": "eat",
-      "minecraft:compostable": { "composting_chance": 65 }
+      "minecraft:compostable": {
+        "composting_chance": 65
+      }
     }
   }
 }
