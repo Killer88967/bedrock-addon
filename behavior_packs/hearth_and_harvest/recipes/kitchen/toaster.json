@@ -1,0 +1,14 @@
+{
+  "format_version": "1.26.50",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "hh:toaster" },
+    "tags": ["crafting_table"],
+    "unlock": [{ "item": "minecraft:redstone" }],
+    "pattern": ["I I", "IRI"],
+    "key": {
+      "I": { "item": "minecraft:iron_ingot" },
+      "R": { "item": "minecraft:redstone" }
+    },
+    "result": { "item": "hh:toaster" }
+  }
+}

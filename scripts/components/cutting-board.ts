@@ -25,7 +25,7 @@ const SLICING: Record<string, SliceRecipe> = {
   [`${NS}:tomato`]: { state: "tomato", result: `${NS}:tomato_slices`, count: 2 },
   [`${NS}:onion`]: { state: "onion", result: `${NS}:onion_slices`, count: 2 },
   [`${NS}:lettuce`]: { state: "lettuce", result: `${NS}:lettuce_leaf`, count: 3 },
-  [MinecraftItemTypes.Bread]: { state: "bread", result: `${NS}:bread_slice`, count: 2 },
+  [MinecraftItemTypes.Bread]: { state: "bread", result: `${NS}:bread_slice`, count: 3 },
   [MinecraftItemTypes.Porkchop]: { state: "porkchop", result: `${NS}:bacon`, count: 3 },
   [MinecraftItemTypes.CookedPorkchop]: {
     state: "cooked_porkchop",

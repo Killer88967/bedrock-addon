@@ -11,9 +11,11 @@
     "build": "just-scripts build",
     "build:production": "just-scripts build --production",
     "clean": "just-scripts clean",
+    "gen": "npm run gen:crops && npm run gen:foods && npm run gen:plate && npm run gen:textures",
     "gen:crops": "node tools/gen-crops.mjs && prettier --write behavior_packs resource_packs --log-level warn",
     "gen:foods": "node tools/gen-foods.mjs && prettier --write behavior_packs resource_packs --log-level warn",
     "gen:textures": "node tools/gen-placeholder-textures.mjs",
+    "gen:plate": "node tools/gen-plate.mjs && prettier --write behavior_packs resource_packs --log-level warn",
     "mcaddon": "just-scripts mcaddon",
     "mcaddon:production": "just-scripts mcaddon --production"
   },
@@ -26,13 +28,9 @@
   "devDependencies": {
     "@minecraft/core-build-tasks": "^5.7.1",
     "eslint-plugin-minecraft-linting": "^2.0.13",
+    "just-scripts": "^2.6.2",
+    "prettier": "^3.9.10",
     "typescript": "~6.0.3",
     "typescript-eslint": "^8.72.0"
-  },
-  "allowScripts": {
-    "eslint@9.39.5": true,
-    "eslint@10.13.0": true,
-    "esbuild@0.25.12": true,
-    "esbuild@0.28.2": true
   }
 }

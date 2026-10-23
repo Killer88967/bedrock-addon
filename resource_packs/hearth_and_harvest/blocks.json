@@ -3,6 +3,9 @@
   "hh:cutting_board": {
     "sound": "wood"
   },
+  "hh:toaster": {
+    "sound": "metal"
+  },
   "hh:tomato_crop": {
     "sound": "grass"
   },
@@ -17,5 +20,8 @@
   },
   "hh:peanut_crop": {
     "sound": "grass"
+  },
+  "hh:plate": {
+    "sound": "stone"
   }
 }

@@ -1,0 +1,76 @@
+{
+  "format_version": "1.26.50",
+  "minecraft:block": {
+    "description": {
+      "identifier": "hh:plate",
+      "menu_category": {
+        "category": "items"
+      },
+      "states": {
+        "hh:base": ["none", "bread", "toast"],
+        "hh:layer_1": ["none", "bacon", "lettuce", "tomato", "onion"],
+        "hh:layer_2": ["none", "bacon", "lettuce", "tomato", "onion"],
+        "hh:layer_3": ["none", "bacon", "lettuce", "tomato", "onion"]
+      }
+    },
+    "components": {
+      "hh:plate": {},
+      "minecraft:geometry": {
+        "identifier": "geometry.hh.plate",
+        "bone_visibility": {
+          "bread": "q.block_state('hh:base') == 'bread'",
+          "toast": "q.block_state('hh:base') == 'toast'",
+          "layer_1_bacon": "q.block_state('hh:layer_1') == 'bacon'",
+          "layer_1_lettuce": "q.block_state('hh:layer_1') == 'lettuce'",
+          "layer_1_tomato": "q.block_state('hh:layer_1') == 'tomato'",
+          "layer_1_onion": "q.block_state('hh:layer_1') == 'onion'",
+          "layer_2_bacon": "q.block_state('hh:layer_2') == 'bacon'",
+          "layer_2_lettuce": "q.block_state('hh:layer_2') == 'lettuce'",
+          "layer_2_tomato": "q.block_state('hh:layer_2') == 'tomato'",
+          "layer_2_onion": "q.block_state('hh:layer_2') == 'onion'",
+          "layer_3_bacon": "q.block_state('hh:layer_3') == 'bacon'",
+          "layer_3_lettuce": "q.block_state('hh:layer_3') == 'lettuce'",
+          "layer_3_tomato": "q.block_state('hh:layer_3') == 'tomato'",
+          "layer_3_onion": "q.block_state('hh:layer_3') == 'onion'"
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "hh_plate",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:collision_box": {
+        "origin": [-5, 0, -5],
+        "size": [10, 1, 10]
+      },
+      "minecraft:selection_box": {
+        "origin": [-5, 0, -5],
+        "size": [10, 2, 10]
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.3
+      },
+      "minecraft:light_dampening": 0,
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": ["up"]
+          }
+        ]
+      },
+      "minecraft:tags": ["minecraft:is_pickaxe_item_destructible"]
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('hh:base') != 'none'",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [-5, 0, -5],
+            "size": [10, 6, 10]
+          }
+        }
+      }
+    ]
+  }
+}

@@ -2,11 +2,11 @@
 // Run: npm run gen:textures
 // Only writes files that don't exist yet, so real art is never overwritten
 // (pass --force to regenerate everything).
-import { deflateSync } from "node:zlib";
 import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
+import { deflateSync } from "node:zlib";
+import { RP } from "./utils/constants.mjs";
 
-const RP = "resource_packs/hearth_and_harvest";
 const force = process.argv.includes("--force");
 
 // "." is transparent. Colors are RGB hex. Sprites can override any of these per texture.
@@ -22,6 +22,15 @@ const PALETTE = {
   y: "e8d9a0", // seed
   Y: "c9b77a", // seed shadow
   w: "f4f4ee", // flower / highlight
+  v: "eeeae2", // plate
+  V: "c9c3b6", // plate rim
+  c: "c8ccd2", // toaster body
+  x: "9aa0a8", // toaster shadow
+  z: "2a2a2a", // toaster slot / lever
+  H: "e8eaee", // toaster highlight
+  O: "ff8a2a", // heating glow
+  F: "d9a560", // toast
+  L: "8a5524", // toast crust
   s: "f2d64b", // strawberry seed / flower center
   p: "e0b060", // onion skin
   P: "b07a35", // onion shadow
@@ -408,6 +417,33 @@ tTTTtTTtTTTtTTT.
 ................
 ................`;
 
+// Side view of a sandwich.
+const SANDWICH = `
+................
+................
+................
+....CCCCCCCC....
+...CffffffffC...
+..CffffffffffC..
+..CCCCCCCCCCCC..
+.33333333333333.
+..222222222222..
+.11111111111111.
+..CCCCCCCCCCCC..
+..CffffffffffC..
+...CCCCCCCCCC...
+................
+................
+................`;
+
+const SANDWICH_FILLINGS = {
+  sandwich: { 1: "5ea83a", 2: "e98a3a", 3: "c46f6f" },
+  veggie_sandwich: { 1: "5ea83a", 2: "d8322b", 3: "f2e6c2" },
+  bacon_sandwich: { 1: "a8673a", 2: "e0b880", 3: "a8673a" },
+  blt: { 1: "5ea83a", 2: "d8322b", 3: "a8673a" },
+};
+const TOASTED = { f: "d9a560", C: "8a5524" };
+
 const OTHER = {
   "textures/items/tools/knife": {
     art: `
@@ -571,6 +607,63 @@ WWWWWWWW....kKkK
 ....mMmMnNnNfffC
 ....MMMMNNNNCCCC`,
   },
+};
+
+for (const [id, fillings] of Object.entries(SANDWICH_FILLINGS)) {
+  OTHER[`textures/items/foods/${id}`] = { art: SANDWICH, colors: fillings };
+  OTHER[`textures/items/foods/toasted_${id}`] = {
+    art: SANDWICH,
+    colors: { ...fillings, ...TOASTED },
+  };
+}
+
+// Plate block atlas: plate top (10x10), plate side (row 10), and 4x4 layer swatches:
+// bread (12,0), bacon (12,4), lettuce (12,8), tomato (12,12), onion (0,12), toast (4,12).
+OTHER["textures/blocks/kitchen/plate"] = {
+  art: `
+VVVVVVVVVV..CCCC
+VvvvvvvvvV..CffC
+VvvvvvvvvV..CffC
+VvvvvvvvvV..CCCC
+VvvvvvvvvV..mMmm
+VvvvvvvvvV..mmMm
+VvvvvvvvvV..MmmM
+VvvvvvvvvV..mMmm
+VvvvvvvvvV..kKkK
+VVVVVVVVVV..KkKk
+VVVVVVVVVV..kKKk
+............KkkK
+pqqpLLLL....rhrR
+qppqLFFL....hyhr
+qppqLFFL....rhyh
+pqqpLLLL....Rrhr`,
+};
+
+OTHER["textures/items/foods/toast"] = {
+  art: OTHER["textures/items/foods/bread_slice"].art,
+  colors: { f: "d9a560", C: "8a5524" },
+};
+
+// Toaster block atlas: top (0,0) 8x6 with slots, front (0,6) 8x6, side (8,0) 6x6,
+// bread slice (8,6) 5x5, lever (14,0), heating glow (14,2).
+OTHER["textures/blocks/kitchen/toaster"] = {
+  art: `
+ccccccccHHHHHHzz
+czzzzzzcccccccOO
+ccccccccccccccOO
+ccccccccccccccOO
+czzzzzzcxxxxxx..
+cccccccczzzzzz..
+HHHHHHHHCCCCC...
+ccccccccCfffC...
+ccccccccCfffC...
+ccccccccCfffC...
+xxxxxxxxCfffC...
+zzzzzzzz........
+................
+................
+................
+................`,
 };
 
 // Seed recolors per crop: [main, shadow].

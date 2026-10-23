@@ -4,11 +4,7 @@
 // Edit the CROPS table, never the generated JSON (it gets overwritten).
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
-
-const NS = "hh";
-const FORMAT = "1.26.50";
-const BP = "behavior_packs/hearth_and_harvest";
-const RP = "resource_packs/hearth_and_harvest";
+import { BP, FORMAT, NS, RP } from "./utils/constants.mjs";
 
 /**
  * id            item/block base name

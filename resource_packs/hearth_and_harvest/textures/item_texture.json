@@ -61,6 +61,33 @@
     },
     "hh_garden_salad": {
       "textures": "textures/items/foods/garden_salad"
+    },
+    "hh_toast": {
+      "textures": "textures/items/foods/toast"
+    },
+    "hh_sandwich": {
+      "textures": "textures/items/foods/sandwich"
+    },
+    "hh_veggie_sandwich": {
+      "textures": "textures/items/foods/veggie_sandwich"
+    },
+    "hh_bacon_sandwich": {
+      "textures": "textures/items/foods/bacon_sandwich"
+    },
+    "hh_blt": {
+      "textures": "textures/items/foods/blt"
+    },
+    "hh_toasted_sandwich": {
+      "textures": "textures/items/foods/toasted_sandwich"
+    },
+    "hh_toasted_veggie_sandwich": {
+      "textures": "textures/items/foods/toasted_veggie_sandwich"
+    },
+    "hh_toasted_bacon_sandwich": {
+      "textures": "textures/items/foods/toasted_bacon_sandwich"
+    },
+    "hh_toasted_blt": {
+      "textures": "textures/items/foods/toasted_blt"
     }
   }
 }

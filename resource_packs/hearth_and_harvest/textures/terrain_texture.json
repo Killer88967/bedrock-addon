@@ -7,6 +7,9 @@
     "hh_cutting_board": {
       "textures": "textures/blocks/kitchen/cutting_board"
     },
+    "hh_toaster": {
+      "textures": "textures/blocks/kitchen/toaster"
+    },
     "hh_tomato_crop_stage_0": {
       "textures": "textures/blocks/crops/tomato_stage_0"
     },
@@ -66,6 +69,9 @@
     },
     "hh_peanut_crop_stage_3": {
       "textures": "textures/blocks/crops/peanut_stage_3"
+    },
+    "hh_plate": {
+      "textures": "textures/blocks/kitchen/plate"
     }
   }
 }
