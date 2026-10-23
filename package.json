@@ -1,0 +1,35 @@
+{
+  "name": "hearth-and-harvest",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "license": "Apache-2.0",
+  "scripts": {
+    "lint": "just-scripts lint",
+    "lint:fix": "just-scripts lint --fix",
+    "typecheck": "tsc --noEmit",
+    "build": "just-scripts build",
+    "build:production": "just-scripts build --production",
+    "clean": "just-scripts clean",
+    "mcaddon": "just-scripts mcaddon",
+    "mcaddon:production": "just-scripts mcaddon --production"
+  },
+  "dependencies": {
+    "@minecraft/math": "^2.4.1",
+    "@minecraft/server": "^2.10.0",
+    "@minecraft/server-ui": "^2.2.0",
+    "@minecraft/vanilla-data": "^1.26.52"
+  },
+  "devDependencies": {
+    "@minecraft/core-build-tasks": "^5.7.1",
+    "eslint-plugin-minecraft-linting": "^2.0.13",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.72.0"
+  },
+  "allowScripts": {
+    "eslint@9.39.5": true,
+    "eslint@10.13.0": true,
+    "esbuild@0.25.12": true,
+    "esbuild@0.28.2": true
+  }
+}
