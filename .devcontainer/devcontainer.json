@@ -1,0 +1,144 @@
+{
+  "name": "Hearth & Harvest (Bedrock Addon)",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "configureZshAsDefaultShell": true,
+      "installOhMyZsh": true,
+      "upgradePackages": true
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/git-lfs:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "blockceptionltd.blockceptionvscodeminecraftbedrockdevelopmentextension",
+        "yzhang.markdown-all-in-one",
+        "vscode-icons-team.vscode-icons",
+        "esbenp.prettier-vscode",
+        "usernamehw.errorlens",
+        "wayou.vscode-todo-highlight",
+        "ultram4rine.vscode-choosealicense",
+        "dbaeumer.vscode-eslint",
+        "GitHub.vscode-github-actions",
+        "yoavbls.pretty-ts-errors",
+        "vitest.explorer",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode.hexeditor",
+        "EditorConfig.EditorConfig",
+        "bradlc.vscode-tailwindcss",
+        "unifiedjs.vscode-mdx",
+        "streetsidesoftware.code-spell-checker",
+        "christian-kohler.path-intellisense",
+        "redhat.vscode-yaml",
+        "redhat.vscode-xml"
+      ],
+      "settings": {
+        "workbench.colorTheme": "Dark Modern",
+        "workbench.iconTheme": "vscode-icons",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "editor.wordWrap": "on",
+        "editor.cursorBlinking": "phase",
+        "editor.cursorSmoothCaretAnimation": "on",
+        "editor.smoothScrolling": true,
+        "editor.bracketPairColorization.enabled": true,
+        "editor.guides.bracketPairs": true,
+        "editor.guides.bracketPairsHorizontal": true,
+        "editor.guides.highlightActiveBracketPair": true,
+        "editor.tabSize": 2,
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": "explicit",
+          "source.organizeImports": "explicit"
+        },
+        "explorer.compactFolders": false,
+        "explorer.confirmDelete": false,
+        "files.encoding": "utf8",
+        "files.eol": "\n",
+        "files.insertFinalNewline": true,
+        "files.trimFinalNewlines": true,
+        "files.trimTrailingWhitespace": true,
+        "files.associations": {
+          "devcontainer.json": "jsonc",
+          "*.lang": "properties",
+          "*.json": "json",
+          "*.code-workspace": "jsonc"
+        },
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.scrollback": 10000,
+        "git.autofetch": true,
+        "eslint.validate": [
+          "javascript",
+          "javascriptreact",
+          "typescript",
+          "typescriptreact",
+          "mdx"
+        ],
+        "eslint.format.enable": true,
+        "js/ts.tsdk": "node_modules/typescript/lib",
+        "js/ts.tsdk.promptToUseWorkspaceVersion": true,
+        "json.schemaDownload.enable": true,
+        "license.author": "Killer88967",
+        "license.default": "apache-2.0",
+        "chat.mcp.enabled": true,
+        "chat.mcp.discovery.enabled": {
+          "claude-desktop": false,
+          "copilot": false,
+          "windsurf": false,
+          "cursor-global": false,
+          "cursor-workspace": false
+        },
+        "chat.mcp.gallery.enabled": true,
+        "chat.mcp.access": "all",
+        "github.copilot.enable": {
+          "*": false,
+          "plaintext": false,
+          "markdown": false,
+          "scminput": false
+        },
+        "[jsonc]": {
+          "editor.defaultFormatter": "vscode.json-language-features"
+        },
+        "[yaml]": {
+          "editor.defaultFormatter": "redhat.vscode-yaml"
+        },
+        "[github-actions-workflow]": {
+          "editor.defaultFormatter": "redhat.vscode-yaml"
+        },
+        "[xml]": {
+          "editor.defaultFormatter": "redhat.vscode-xml"
+        },
+        "[markdown]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "files.trimTrailingWhitespace": false
+        },
+        "todohighlight.keywords": [
+          {
+            "text": "FINDME:",
+            "color": "#ffffff",
+            "backgroundColor": "#8b5cf6",
+            "overviewRulerColor": "#8b5cf6"
+          },
+          {
+            "text": "IDEA:",
+            "color": "#ffffff",
+            "backgroundColor": "#0891b2",
+            "overviewRulerColor": "#0891b2"
+          },
+          {
+            "text": "DEPRECATED:",
+            "color": "#ffffff",
+            "backgroundColor": "#d40d0d",
+            "overviewRulerColor": "#d40d0d"
+          }
+        ]
+      }
+    }
+  },
+  "remoteUser": "vscode"
+}
