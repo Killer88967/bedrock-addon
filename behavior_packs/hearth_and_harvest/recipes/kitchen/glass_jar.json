@@ -7,7 +7,7 @@
     "pattern": [" P ", "G G", "GGG"],
     "key": {
       "P": { "tag": "minecraft:planks" },
-      "G": { "tag": "minecraft:glass" }
+      "G": { "item": "minecraft:glass" }
     },
     "result": { "item": "hh:glass_jar", "count": 4 }
   }
