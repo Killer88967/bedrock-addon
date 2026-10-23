@@ -1,0 +1,8 @@
+{
+  "resource_pack_name": "hearth_and_harvest",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "hh_tomato": { "textures": "textures/items/foods/tomato" },
+    "hh_tomato_seeds": { "textures": "textures/items/crops/tomato_seeds" }
+  }
+}

@@ -1,2 +1,6 @@
 pack.name=Hearth & Harvest
 pack.description=Farming, cooking, kitchens, and cozy homes.
+
+tile.hh:tomato_crop.name=Tomato Crop
+item.hh:tomato=Tomato
+item.hh:tomato_seeds=Tomato Seeds
