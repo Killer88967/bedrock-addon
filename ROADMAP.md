@@ -22,16 +22,16 @@ and fitting mobs. Single player, multiplayer, and Realms.
 - **Multiplayer**: all block state stored in dynamic properties keyed by dimension + location; per-block "in use" lock so two players can't use the same station at once; no client-only state.
 
 ## Phase 0 — Project setup
-- [ ] Devcontainer, package.json, tsconfig, just.config.ts, ESLint, Prettier
-- [ ] BP + RP manifests with dependency UUIDs linked
-- [ ] Script entry, registered custom block/item components skeleton
-- [ ] Lang files (en_US) set up
+- [x] Devcontainer, package.json, tsconfig, just.config.ts, ESLint, Prettier
+- [x] BP + RP manifests with dependency UUIDs linked
+- [x] Script entry, registered custom block/item components skeleton
+- [x] Lang files (en_US) set up
 
 ## Phase 1 — Crops & raw ingredients
-- [ ] Tomato, onion, lettuce, strawberry, peanut (crop blocks + seeds + produce)
-- [ ] Growth stages, bonemeal, drops, farmland requirement
-- [ ] Wild variants that drop seeds
-- [ ] Textures + item icons
+- [x] Tomato, onion, lettuce, strawberry, peanut (crop blocks + seeds + produce)
+- [x] Growth stages, bonemeal, drops, farmland requirement
+- [x] Wild variants that drop seeds
+- [x] Textures + item icons
 
 ## Phase 2 — Basic foods
 - [ ] Knife item (durability)
