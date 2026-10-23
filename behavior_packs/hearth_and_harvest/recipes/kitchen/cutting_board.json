@@ -1,0 +1,14 @@
+{
+  "format_version": "1.26.50",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "hh:cutting_board" },
+    "tags": ["crafting_table"],
+    "unlock": [{ "tag": "minecraft:planks" }],
+    "pattern": ["S ", "PP"],
+    "key": {
+      "S": { "item": "minecraft:stick" },
+      "P": { "tag": "minecraft:planks" }
+    },
+    "result": { "item": "hh:cutting_board" }
+  }
+}

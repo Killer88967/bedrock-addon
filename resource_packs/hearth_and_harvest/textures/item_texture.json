@@ -2,6 +2,12 @@
   "resource_pack_name": "hearth_and_harvest",
   "texture_name": "atlas.items",
   "texture_data": {
+    "hh_knife": {
+      "textures": "textures/items/tools/knife"
+    },
+    "hh_glass_jar": {
+      "textures": "textures/items/kitchen/glass_jar"
+    },
     "hh_tomato": {
       "textures": "textures/items/foods/tomato"
     },
@@ -31,6 +37,30 @@
     },
     "hh_peanut_seeds": {
       "textures": "textures/items/crops/peanut_seeds"
+    },
+    "hh_tomato_slices": {
+      "textures": "textures/items/foods/tomato_slices"
+    },
+    "hh_onion_slices": {
+      "textures": "textures/items/foods/onion_slices"
+    },
+    "hh_lettuce_leaf": {
+      "textures": "textures/items/foods/lettuce_leaf"
+    },
+    "hh_bread_slice": {
+      "textures": "textures/items/foods/bread_slice"
+    },
+    "hh_bacon": {
+      "textures": "textures/items/foods/bacon"
+    },
+    "hh_cooked_bacon": {
+      "textures": "textures/items/foods/cooked_bacon"
+    },
+    "hh_roasted_peanuts": {
+      "textures": "textures/items/foods/roasted_peanuts"
+    },
+    "hh_garden_salad": {
+      "textures": "textures/items/foods/garden_salad"
     }
   }
 }

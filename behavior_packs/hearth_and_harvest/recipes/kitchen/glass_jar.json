@@ -1,0 +1,14 @@
+{
+  "format_version": "1.26.50",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "hh:glass_jar" },
+    "tags": ["crafting_table"],
+    "unlock": [{ "item": "minecraft:glass" }],
+    "pattern": [" P ", "G G", "GGG"],
+    "key": {
+      "P": { "tag": "minecraft:planks" },
+      "G": { "tag": "minecraft:glass" }
+    },
+    "result": { "item": "hh:glass_jar", "count": 4 }
+  }
+}

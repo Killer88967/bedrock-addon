@@ -1,5 +1,8 @@
 {
   "format_version": [1, 1, 0],
+  "hh:cutting_board": {
+    "sound": "wood"
+  },
   "hh:tomato_crop": {
     "sound": "grass"
   },

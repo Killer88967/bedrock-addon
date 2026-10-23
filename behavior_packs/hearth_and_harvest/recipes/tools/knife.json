@@ -1,0 +1,14 @@
+{
+  "format_version": "1.26.50",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "hh:knife" },
+    "tags": ["crafting_table"],
+    "unlock": [{ "item": "minecraft:iron_ingot" }],
+    "pattern": ["I", "S"],
+    "key": {
+      "I": { "item": "minecraft:iron_ingot" },
+      "S": { "item": "minecraft:stick" }
+    },
+    "result": { "item": "hh:knife" }
+  }
+}

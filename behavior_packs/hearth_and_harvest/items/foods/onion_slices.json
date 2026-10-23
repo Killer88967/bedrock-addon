@@ -1,0 +1,31 @@
+{
+  "format_version": "1.26.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hh:onion_slices",
+      "menu_category": {
+        "category": "equipment",
+        "group": "minecraft:itemGroup.name.miscFood"
+      }
+    },
+    "components": {
+      "minecraft:icon": {
+        "textures": {
+          "default": "hh_onion_slices"
+        }
+      },
+      "minecraft:food": {
+        "nutrition": 1,
+        "saturation_modifier": 0.3
+      },
+      "minecraft:use_modifiers": {
+        "use_duration": 1.6,
+        "movement_modifier": 0.35
+      },
+      "minecraft:use_animation": "eat",
+      "minecraft:compostable": {
+        "composting_chance": 50
+      }
+    }
+  }
+}

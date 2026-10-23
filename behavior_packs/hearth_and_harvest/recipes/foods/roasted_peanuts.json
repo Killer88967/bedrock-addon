@@ -1,0 +1,10 @@
+{
+  "format_version": "1.26.50",
+  "minecraft:recipe_furnace": {
+    "description": { "identifier": "hh:roasted_peanuts" },
+    "unlock": [{ "item": "hh:peanut" }],
+    "tags": ["furnace", "smoker", "campfire", "soul_campfire"],
+    "input": "hh:peanut",
+    "output": "hh:roasted_peanuts"
+  }
+}

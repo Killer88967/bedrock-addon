@@ -1,6 +1,10 @@
 pack.name=Hearth & Harvest
 pack.description=Farming, cooking, kitchens, and cozy homes.
 
+item.hh:knife=Knife
+item.hh:glass_jar=Glass Jar
+tile.hh:cutting_board.name=Cutting Board
+
 tile.hh:tomato_crop.name=Tomato Crop
 item.hh:tomato=Tomato
 item.hh:tomato_seeds=Tomato Seeds
@@ -16,3 +20,11 @@ item.hh:strawberry_seeds=Strawberry Seeds
 tile.hh:peanut_crop.name=Peanut Crop
 item.hh:peanut=Peanut
 item.hh:peanut_seeds=Peanut Seeds
+item.hh:tomato_slices=Tomato Slices
+item.hh:onion_slices=Onion Slices
+item.hh:lettuce_leaf=Lettuce Leaf
+item.hh:bread_slice=Bread Slice
+item.hh:bacon=Raw Bacon
+item.hh:cooked_bacon=Cooked Bacon
+item.hh:roasted_peanuts=Roasted Peanuts
+item.hh:garden_salad=Garden Salad
