@@ -42,12 +42,13 @@ and fitting mobs. Single player, multiplayer, and Realms.
 - [x] Knife item (durability)
 - [ ] Butter (churn), cheese (later), peanut butter
 - [ ] Jams: strawberry, sweet berry, glow berry (+ glass jar item)
-- [ ] Sliced items: tomato slices, onion slices, lettuce leaf, bread slice
+- [x] Sliced items: tomato slices, onion slices, lettuce leaf, bread slice
 - [ ] Sandwiches: PB&J, BLT-style, cheese/veggie, toasted variants
 
 ## Phase 3 - Kitchen blocks & UI
 
-- [ ] Cutting board (block + interaction + slice logic)
+- [x] Cutting board (block + interaction + slice logic)
+- [x] Toaster
 - [ ] Butter churn
 - [ ] Cooking pot + server-ui recipe menu
 - [ ] Stove (heat source, multiple wood types optional)
