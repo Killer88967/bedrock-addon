@@ -18,6 +18,8 @@ const FILLINGS = [
   { state: "lettuce", uv: [12, 8], size: 9 },
   { state: "tomato", uv: [12, 12], size: 7 },
   { state: "onion", uv: [0, 12], size: 7 },
+  { state: "butter", uv: [16, 0], size: 8 },
+  { state: "peanut_butter", uv: [16, 4], size: 8 },
 ];
 
 /** The bottom slice. Its state value is also the bone name. */
@@ -139,7 +141,7 @@ const geometry = {
     {
       description: {
         identifier: "geometry.hh.plate",
-        texture_width: 16,
+        texture_width: 32,
         texture_height: 16,
         visible_bounds_width: 2,
         visible_bounds_height: 1.5,

@@ -7,11 +7,20 @@
     "hh_cutting_board": {
       "textures": "textures/blocks/kitchen/cutting_board"
     },
+    "hh_plate": {
+      "textures": "textures/blocks/kitchen/plate"
+    },
     "hh_toaster": {
       "textures": "textures/blocks/kitchen/toaster"
     },
     "hh_butter_churn": {
       "textures": "textures/blocks/kitchen/butter_churn"
+    },
+    "hh_butter_dish": {
+      "textures": "textures/blocks/kitchen/butter_dish"
+    },
+    "hh_peanut_butter_jar": {
+      "textures": "textures/blocks/kitchen/peanut_butter_jar"
     },
     "hh_tomato_crop_stage_0": {
       "textures": "textures/blocks/crops/tomato_stage_0"
@@ -72,9 +81,6 @@
     },
     "hh_peanut_crop_stage_3": {
       "textures": "textures/blocks/crops/peanut_stage_3"
-    },
-    "hh_plate": {
-      "textures": "textures/blocks/kitchen/plate"
     }
   }
 }

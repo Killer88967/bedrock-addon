@@ -1,0 +1,37 @@
+{
+  "format_version": "1.26.50",
+  "minecraft:block": {
+    "description": {
+      "identifier": "hh:butter_dish_block",
+      "menu_category": { "category": "none" },
+      "states": { "hh:uses": [0, 1, 2, 3, 4] }
+    },
+    "components": {
+      "hh:spread_container": {
+        "spread": "butter",
+        "item": "hh:butter_dish",
+        "empty_item": "hh:empty_butter_dish",
+        "refill": "hh:butter"
+      },
+      "minecraft:geometry": {
+        "identifier": "geometry.hh.butter_dish",
+        "bone_visibility": {
+          "butter_1": "q.block_state('hh:uses') == 1",
+          "butter_2": "q.block_state('hh:uses') == 2",
+          "butter_3": "q.block_state('hh:uses') == 3",
+          "butter_4": "q.block_state('hh:uses') == 4"
+        }
+      },
+      "minecraft:material_instances": {
+        "*": { "texture": "hh_butter_dish", "render_method": "opaque" }
+      },
+      "minecraft:collision_box": { "origin": [-5, 0, -4], "size": [10, 1, 8] },
+      "minecraft:selection_box": { "origin": [-5, 0, -4], "size": [10, 4, 8] },
+      "minecraft:destructible_by_mining": { "seconds_to_destroy": 0.3 },
+      "minecraft:light_dampening": 0,
+      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:placement_filter": { "conditions": [{ "allowed_faces": ["up"] }] },
+      "minecraft:tags": ["minecraft:is_pickaxe_item_destructible"]
+    }
+  }
+}

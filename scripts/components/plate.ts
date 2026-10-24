@@ -6,7 +6,8 @@ import {
   type Vector3,
 } from "@minecraft/server";
 import { NS } from "../constants";
-import { consumeHeldItem, getHeldItem, giveItem } from "../utils/inventory";
+import { KNIFE, SPREAD_BY_KNIFE } from "../spreads";
+import { consumeHeldItem, getHeldItem, giveItem, hint, swapHeldItem } from "../utils/inventory";
 
 export const PLATE_COMPONENT = `${NS}:plate`;
 
@@ -23,7 +24,7 @@ const ITEM_BY_BASE = new Map(Object.entries(BREADS).map(([item, state]) => [stat
 
 /**
  * Item -> value of the hh:layer_N states.
- * Keep in sync with FILLINGS in tools/gen-plate.mjs.
+ * FILLINGS in tools/gen-plate.mjs lists these plus the spreads (see ../spreads.ts).
  */
 const FILLINGS: Record<string, string> = {
   [`${NS}:cooked_bacon`]: "bacon",
@@ -34,9 +35,20 @@ const FILLINGS: Record<string, string> = {
 
 const ITEM_BY_FILLING = new Map(Object.entries(FILLINGS).map(([item, state]) => [state, item]));
 
+/** Spread -> start of the open-faced item name, e.g. buttered_toast, peanut_butter_bread. */
+const OPEN_FACED: Record<string, string> = {
+  butter: "buttered",
+  peanut_butter: "peanut_butter",
+};
+
 interface SandwichRecipe {
   result: string;
   matches: (fillings: string[]) => boolean;
+}
+
+/** One or more of a single filling. */
+function only(wanted: string): (fillings: string[]) => boolean {
+  return (fillings) => fillings.length > 0 && fillings.every((filling) => filling === wanted);
 }
 
 /** Exact filling set, in any order. */
@@ -52,7 +64,8 @@ function exactly(...wanted: string[]): (fillings: string[]) => boolean {
 const SANDWICHES: SandwichRecipe[] = [
   { result: "blt", matches: exactly("bacon", "lettuce", "tomato") },
   { result: "veggie_sandwich", matches: exactly("lettuce", "onion", "tomato") },
-  { result: "bacon_sandwich", matches: (f) => f.every((filling) => filling === "bacon") },
+  { result: "bacon_sandwich", matches: only("bacon") },
+  { result: "peanut_butter_sandwich", matches: only("peanut_butter") },
 ];
 const PLAIN_SANDWICH = "sandwich";
 
@@ -82,9 +95,10 @@ function writePlate(block: Block, { base, fillings }: PlateContents): void {
   block.setPermutation(BlockPermutation.resolve(block.typeId, states));
 }
 
-/** Toasted only when both slices are toast. */
+/** Toasted only when both slices are toast. Butter doesn't change which sandwich it is. */
 function sandwichFor(fillings: string[], toasted: boolean): string {
-  const name = SANDWICHES.find((recipe) => recipe.matches(fillings))?.result ?? PLAIN_SANDWICH;
+  const flavor = fillings.filter((filling) => filling !== "butter");
+  const name = SANDWICHES.find((recipe) => recipe.matches(flavor))?.result ?? PLAIN_SANDWICH;
   return toasted ? `${NS}:toasted_${name}` : `${NS}:${name}`;
 }
 
@@ -101,7 +115,21 @@ export const PlateComponent: BlockCustomComponent = {
 
     // Empty hand: take the top layer back.
     if (!held) {
-      const top = plate.fillings.pop();
+      const top = plate.fillings.at(-1);
+
+      // Spreads can't be scraped off. A lone spread on bread/toast picks up as an open slice.
+      if (top && OPEN_FACED[top]) {
+        if (plate.fillings.length > 1) {
+          hint(player, "Can't scrape that off. Finish the sandwich!");
+          return;
+        }
+        giveItem(player, new ItemStack(`${NS}:${OPEN_FACED[top]}_${plate.base}`));
+        writePlate(block, { base: EMPTY, fillings: [] });
+        dimension.playSound("random.pop", above(block));
+        return;
+      }
+
+      plate.fillings.pop();
       if (top) {
         giveItem(player, new ItemStack(ITEM_BY_FILLING.get(top)!));
       } else if (plate.base !== EMPTY) {
@@ -131,6 +159,21 @@ export const PlateComponent: BlockCustomComponent = {
       consumeHeldItem(player);
       dimension.spawnItem(new ItemStack(result), above(block));
       dimension.playSound("random.pop", above(block), { pitch: 1.2 });
+      return;
+    }
+
+    // Coated knife: spread it on as a layer.
+    const spread = SPREAD_BY_KNIFE.get(held.typeId);
+    if (spread) {
+      if (plate.base === EMPTY) {
+        hint(player, "Put down bread or toast first");
+        return;
+      }
+      if (plate.fillings.length >= SLOTS) return;
+      plate.fillings.push(spread);
+      writePlate(block, plate);
+      swapHeldItem(player, KNIFE);
+      dimension.playSound("random.pop", above(block), { pitch: 1.5, volume: 0.5 });
       return;
     }
 

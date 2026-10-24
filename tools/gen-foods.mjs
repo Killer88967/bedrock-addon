@@ -24,17 +24,12 @@ const FOODS = [
   { id: "bread_slice", name: "Bread Slice", nutrition: 2, saturation: 0.6, compost: 50 },
   { id: "toast", name: "Toast", nutrition: 3, saturation: 0.6 },
   { id: "buttered_toast", name: "Buttered Toast", nutrition: 5, saturation: 0.7 },
+  { id: "peanut_butter_toast", name: "Peanut Butter Toast", nutrition: 6, saturation: 0.8 },
+  { id: "buttered_bread", name: "Buttered Bread", nutrition: 4, saturation: 0.6 },
+  { id: "peanut_butter_bread", name: "Peanut Better Bread", nutrition: 5, saturation: 0.7 },
   { id: "bacon", name: "Raw Bacon", nutrition: 1, saturation: 0.3 },
   { id: "cooked_bacon", name: "Cooked Bacon", nutrition: 3, saturation: 0.8 },
   { id: "roasted_peanuts", name: "Roasted Peanuts", nutrition: 3, saturation: 0.6 },
-  {
-    id: "peanut_butter",
-    name: "Peanut Butter",
-    nutrition: 4,
-    saturation: 0.8,
-    returns: "hh:glass_jar",
-    stack: 16,
-  },
   {
     id: "garden_salad",
     name: "Garden Salad",
@@ -47,10 +42,17 @@ const FOODS = [
   { id: "veggie_sandwich", name: "Veggie Sandwich", nutrition: 7, saturation: 0.7 },
   { id: "bacon_sandwich", name: "Bacon Sandwich", nutrition: 8, saturation: 0.8 },
   { id: "blt", name: "BLT", nutrition: 10, saturation: 0.9 },
+  { id: "peanut_butter_sandwich", name: "Peanut Butter Sandwich", nutrition: 7, saturation: 0.8 },
   { id: "toasted_sandwich", name: "Toasted Sandwich", nutrition: 7, saturation: 0.7 },
   { id: "toasted_veggie_sandwich", name: "Toasted Veggie Sandwich", nutrition: 8, saturation: 0.8 },
   { id: "toasted_bacon_sandwich", name: "Toasted Bacon Sandwich", nutrition: 9, saturation: 0.9 },
   { id: "toasted_blt", name: "Toasted BLT", nutrition: 11, saturation: 1.0 },
+  {
+    id: "toasted_peanut_butter_sandwich",
+    name: "Toasted Peanut Butter Sandwich",
+    nutrition: 8,
+    saturation: 0.9,
+  },
 ];
 
 function writeJson(file, data) {

@@ -3,7 +3,7 @@ import {
   EquipmentSlot,
   GameMode,
   ItemComponentTypes,
-  type ItemStack,
+  ItemStack,
   type Player,
 } from "@minecraft/server";
 
@@ -51,4 +51,25 @@ export function damageHeldItem(player: Player): void {
 export function giveItem(player: Player, item: ItemStack): void {
   const leftover = player.getComponent(EntityComponentTypes.Inventory)?.container.addItem(item);
   if (leftover) player.dimension.spawnItem(leftover, player.location);
+}
+
+/** Swaps the held item for another item type, keeping its durability damage and name. */
+export function swapHeldItem(player: Player, typeId: string): void {
+  const equippable = player.getComponent(EntityComponentTypes.Equippable);
+  const held = equippable?.getEquipment(EquipmentSlot.Mainhand);
+  if (!equippable || !held) return;
+
+  const next = new ItemStack(typeId, held.amount);
+  const oldDurability = held.getComponent(ItemComponentTypes.Durability);
+  const newDurability = next.getComponent(ItemComponentTypes.Durability);
+  if (oldDurability && newDurability) {
+    newDurability.damage = Math.min(oldDurability.damage, newDurability.maxDurability);
+  }
+  if (held.nameTag) next.nameTag = held.nameTag;
+  equippable.setEquipment(EquipmentSlot.Mainhand, next);
+}
+
+/** Shows a short message above the hotbar. */
+export function hint(player: Player, message: string): void {
+  player.onScreenDisplay.setActionBar(message);
 }

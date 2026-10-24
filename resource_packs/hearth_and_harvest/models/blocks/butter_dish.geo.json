@@ -1,0 +1,111 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.hh.butter_dish",
+        "texture_width": 16,
+        "texture_height": 16,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 1.5,
+        "visible_bounds_offset": [0, 0.25, 0]
+      },
+      "bones": [
+        {
+          "name": "dish",
+          "pivot": [0, 0, 0],
+          "cubes": [
+            {
+              "origin": [-5, 0, -4],
+              "size": [10, 1, 8],
+              "uv": {
+                "north": { "uv": [0, 8], "uv_size": [10, 1] },
+                "south": { "uv": [0, 8], "uv_size": [10, 1] },
+                "east": { "uv": [0, 8], "uv_size": [8, 1] },
+                "west": { "uv": [0, 8], "uv_size": [8, 1] },
+                "up": { "uv": [0, 0], "uv_size": [10, 8] },
+                "down": { "uv": [0, 0], "uv_size": [10, 8] }
+              }
+            }
+          ]
+        },
+        {
+          "name": "butter_1",
+          "parent": "dish",
+          "pivot": [0, 0, 0],
+          "cubes": [
+            {
+              "origin": [-1, 1, -2],
+              "size": [2, 3, 4],
+              "uv": {
+                "north": { "uv": [12, 0], "uv_size": [4, 3] },
+                "south": { "uv": [12, 0], "uv_size": [4, 3] },
+                "east": { "uv": [12, 0], "uv_size": [4, 3] },
+                "west": { "uv": [12, 0], "uv_size": [4, 3] },
+                "up": { "uv": [12, 0], "uv_size": [4, 4] },
+                "down": { "uv": [12, 0], "uv_size": [4, 4] }
+              }
+            }
+          ]
+        },
+        {
+          "name": "butter_2",
+          "parent": "dish",
+          "pivot": [0, 0, 0],
+          "cubes": [
+            {
+              "origin": [-2, 1, -2],
+              "size": [4, 3, 4],
+              "uv": {
+                "north": { "uv": [12, 0], "uv_size": [4, 3] },
+                "south": { "uv": [12, 0], "uv_size": [4, 3] },
+                "east": { "uv": [12, 0], "uv_size": [4, 3] },
+                "west": { "uv": [12, 0], "uv_size": [4, 3] },
+                "up": { "uv": [12, 0], "uv_size": [4, 4] },
+                "down": { "uv": [12, 0], "uv_size": [4, 4] }
+              }
+            }
+          ]
+        },
+        {
+          "name": "butter_3",
+          "parent": "dish",
+          "pivot": [0, 0, 0],
+          "cubes": [
+            {
+              "origin": [-3, 1, -2],
+              "size": [6, 3, 4],
+              "uv": {
+                "north": { "uv": [12, 0], "uv_size": [4, 3] },
+                "south": { "uv": [12, 0], "uv_size": [4, 3] },
+                "east": { "uv": [12, 0], "uv_size": [4, 3] },
+                "west": { "uv": [12, 0], "uv_size": [4, 3] },
+                "up": { "uv": [12, 0], "uv_size": [4, 4] },
+                "down": { "uv": [12, 0], "uv_size": [4, 4] }
+              }
+            }
+          ]
+        },
+        {
+          "name": "butter_4",
+          "parent": "dish",
+          "pivot": [0, 0, 0],
+          "cubes": [
+            {
+              "origin": [-4, 1, -2],
+              "size": [8, 3, 4],
+              "uv": {
+                "north": { "uv": [12, 0], "uv_size": [4, 3] },
+                "south": { "uv": [12, 0], "uv_size": [4, 3] },
+                "east": { "uv": [12, 0], "uv_size": [4, 3] },
+                "west": { "uv": [12, 0], "uv_size": [4, 3] },
+                "up": { "uv": [12, 0], "uv_size": [4, 4] },
+                "down": { "uv": [12, 0], "uv_size": [4, 4] }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

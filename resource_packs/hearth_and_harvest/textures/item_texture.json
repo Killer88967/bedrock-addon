@@ -5,6 +5,18 @@
     "hh_knife": {
       "textures": "textures/items/tools/knife"
     },
+    "hh_butter_knife": {
+      "textures": "textures/items/tools/butter_knife"
+    },
+    "hh_peanut_butter_knife": {
+      "textures": "textures/items/tools/peanut_butter_knife"
+    },
+    "hh_butter_dish": {
+      "textures": "textures/items/kitchen/butter_dish"
+    },
+    "hh_empty_butter_dish": {
+      "textures": "textures/items/kitchen/empty_butter_dish"
+    },
     "hh_glass_jar": {
       "textures": "textures/items/kitchen/glass_jar"
     },
@@ -97,6 +109,21 @@
     },
     "hh_peanut_butter": {
       "textures": "textures/items/foods/peanut_butter"
+    },
+    "hh_peanut_butter_toast": {
+      "textures": "textures/items/foods/peanut_butter_toast"
+    },
+    "hh_buttered_bread": {
+      "textures": "textures/items/foods/buttered_bread"
+    },
+    "hh_peanut_butter_bread": {
+      "textures": "textures/items/foods/peanut_butter_bread"
+    },
+    "hh_peanut_butter_sandwich": {
+      "textures": "textures/items/foods/peanut_butter_sandwich"
+    },
+    "hh_toasted_peanut_butter_sandwich": {
+      "textures": "textures/items/foods/toasted_peanut_butter_sandwich"
     }
   }
 }

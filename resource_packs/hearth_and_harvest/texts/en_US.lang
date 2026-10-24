@@ -1,13 +1,21 @@
 pack.name=Hearth & Harvest
 pack.description=Farming, cooking, kitchens, and cozy homes.
 
+## Items
 item.hh:knife=Knife
+item.hh:butter_knife=Buttered Knife
+item.hh:peanut_butter_knife=Peanut Butter Knife
+item.hh:butter_dish=Butter Dish
+item.hh:empty_butter_dish=Empty Butter Dish
 item.hh:glass_jar=Glass Jar
 tile.hh:cutting_board.name=Cutting Board
 tile.hh:plate.name=Plate
 tile.hh:toaster.name=Toaster
 tile.hh:butter_churn.name=Butter Churn
+tile.hh:butter_dish_block.name=Butter Dish
+tile.hh:peanut_butter_jar.name=Peanut Butter Jar
 
+## foods & crops
 tile.hh:tomato_crop.name=Tomato Crop
 item.hh:tomato=Tomato
 item.hh:tomato_seeds=Tomato Seeds
@@ -43,3 +51,8 @@ item.hh:toasted_bacon_sandwich=Toasted Bacon Sandwich
 item.hh:toasted_blt=Toasted BLT
 item.hh:butter=Butter
 item.hh:peanut_butter=Peanut Butter
+item.hh:peanut_butter_toast=Peanut Butter Toast
+item.hh:buttered_bread=Buttered Bread
+item.hh:peanut_butter_bread=Peanut Better Bread
+item.hh:peanut_butter_sandwich=Peanut Butter Sandwich
+item.hh:toasted_peanut_butter_sandwich=Toasted Peanut Butter Sandwich

@@ -3,12 +3,11 @@ import {
   type BlockCustomComponent,
   BlockPermutation,
   ItemStack,
-  type Player,
   type Vector3,
 } from "@minecraft/server";
 import { MinecraftItemTypes } from "@minecraft/vanilla-data";
 import { NS } from "../constants";
-import { consumeHeldItem, getHeldItem, giveItem, isCreative } from "../utils/inventory";
+import { consumeHeldItem, getHeldItem, giveItem, hint, isCreative } from "../utils/inventory";
 
 export const CHURN_COMPONENT = `${NS}:churn`;
 
@@ -76,10 +75,6 @@ function writeChurn(block: Block, { contents, progress }: ChurnState): void {
 function top(block: Block): Vector3 {
   const { x, y, z } = block.center();
   return { x, y: y + 0.5, z };
-}
-
-function hint(player: Player, message: string): void {
-  player.onScreenDisplay.setActionBar(message);
 }
 
 export const ChurnComponent: BlockCustomComponent = {

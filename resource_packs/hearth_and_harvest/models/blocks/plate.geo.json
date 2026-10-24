@@ -4,7 +4,7 @@
     {
       "description": {
         "identifier": "geometry.hh.plate",
-        "texture_width": 16,
+        "texture_width": 32,
         "texture_height": 16,
         "visible_bounds_width": 2,
         "visible_bounds_height": 1.5,
@@ -270,6 +270,80 @@
           ]
         },
         {
+          "name": "layer_1_butter",
+          "parent": "plate",
+          "pivot": [0, 0, 0],
+          "cubes": [
+            {
+              "origin": [-4, 3, -4],
+              "size": [8, 1, 8],
+              "uv": {
+                "north": {
+                  "uv": [16, 0],
+                  "uv_size": [4, 1]
+                },
+                "south": {
+                  "uv": [16, 0],
+                  "uv_size": [4, 1]
+                },
+                "east": {
+                  "uv": [16, 0],
+                  "uv_size": [4, 1]
+                },
+                "west": {
+                  "uv": [16, 0],
+                  "uv_size": [4, 1]
+                },
+                "up": {
+                  "uv": [16, 0],
+                  "uv_size": [4, 4]
+                },
+                "down": {
+                  "uv": [16, 0],
+                  "uv_size": [4, 4]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "layer_1_peanut_butter",
+          "parent": "plate",
+          "pivot": [0, 0, 0],
+          "cubes": [
+            {
+              "origin": [-4, 3, -4],
+              "size": [8, 1, 8],
+              "uv": {
+                "north": {
+                  "uv": [16, 4],
+                  "uv_size": [4, 1]
+                },
+                "south": {
+                  "uv": [16, 4],
+                  "uv_size": [4, 1]
+                },
+                "east": {
+                  "uv": [16, 4],
+                  "uv_size": [4, 1]
+                },
+                "west": {
+                  "uv": [16, 4],
+                  "uv_size": [4, 1]
+                },
+                "up": {
+                  "uv": [16, 4],
+                  "uv_size": [4, 4]
+                },
+                "down": {
+                  "uv": [16, 4],
+                  "uv_size": [4, 4]
+                }
+              }
+            }
+          ]
+        },
+        {
           "name": "layer_2_bacon",
           "parent": "plate",
           "pivot": [0, 0, 0],
@@ -418,6 +492,80 @@
           ]
         },
         {
+          "name": "layer_2_butter",
+          "parent": "plate",
+          "pivot": [0, 0, 0],
+          "cubes": [
+            {
+              "origin": [-4, 4, -4],
+              "size": [8, 1, 8],
+              "uv": {
+                "north": {
+                  "uv": [16, 0],
+                  "uv_size": [4, 1]
+                },
+                "south": {
+                  "uv": [16, 0],
+                  "uv_size": [4, 1]
+                },
+                "east": {
+                  "uv": [16, 0],
+                  "uv_size": [4, 1]
+                },
+                "west": {
+                  "uv": [16, 0],
+                  "uv_size": [4, 1]
+                },
+                "up": {
+                  "uv": [16, 0],
+                  "uv_size": [4, 4]
+                },
+                "down": {
+                  "uv": [16, 0],
+                  "uv_size": [4, 4]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "layer_2_peanut_butter",
+          "parent": "plate",
+          "pivot": [0, 0, 0],
+          "cubes": [
+            {
+              "origin": [-4, 4, -4],
+              "size": [8, 1, 8],
+              "uv": {
+                "north": {
+                  "uv": [16, 4],
+                  "uv_size": [4, 1]
+                },
+                "south": {
+                  "uv": [16, 4],
+                  "uv_size": [4, 1]
+                },
+                "east": {
+                  "uv": [16, 4],
+                  "uv_size": [4, 1]
+                },
+                "west": {
+                  "uv": [16, 4],
+                  "uv_size": [4, 1]
+                },
+                "up": {
+                  "uv": [16, 4],
+                  "uv_size": [4, 4]
+                },
+                "down": {
+                  "uv": [16, 4],
+                  "uv_size": [4, 4]
+                }
+              }
+            }
+          ]
+        },
+        {
           "name": "layer_3_bacon",
           "parent": "plate",
           "pivot": [0, 0, 0],
@@ -559,6 +707,80 @@
                 },
                 "down": {
                   "uv": [0, 12],
+                  "uv_size": [4, 4]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "layer_3_butter",
+          "parent": "plate",
+          "pivot": [0, 0, 0],
+          "cubes": [
+            {
+              "origin": [-4, 5, -4],
+              "size": [8, 1, 8],
+              "uv": {
+                "north": {
+                  "uv": [16, 0],
+                  "uv_size": [4, 1]
+                },
+                "south": {
+                  "uv": [16, 0],
+                  "uv_size": [4, 1]
+                },
+                "east": {
+                  "uv": [16, 0],
+                  "uv_size": [4, 1]
+                },
+                "west": {
+                  "uv": [16, 0],
+                  "uv_size": [4, 1]
+                },
+                "up": {
+                  "uv": [16, 0],
+                  "uv_size": [4, 4]
+                },
+                "down": {
+                  "uv": [16, 0],
+                  "uv_size": [4, 4]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "layer_3_peanut_butter",
+          "parent": "plate",
+          "pivot": [0, 0, 0],
+          "cubes": [
+            {
+              "origin": [-4, 5, -4],
+              "size": [8, 1, 8],
+              "uv": {
+                "north": {
+                  "uv": [16, 4],
+                  "uv_size": [4, 1]
+                },
+                "south": {
+                  "uv": [16, 4],
+                  "uv_size": [4, 1]
+                },
+                "east": {
+                  "uv": [16, 4],
+                  "uv_size": [4, 1]
+                },
+                "west": {
+                  "uv": [16, 4],
+                  "uv_size": [4, 1]
+                },
+                "up": {
+                  "uv": [16, 4],
+                  "uv_size": [4, 4]
+                },
+                "down": {
+                  "uv": [16, 4],
                   "uv_size": [4, 4]
                 }
               }

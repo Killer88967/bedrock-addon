@@ -8,9 +8,9 @@
       },
       "states": {
         "hh:base": ["none", "bread", "toast"],
-        "hh:layer_1": ["none", "bacon", "lettuce", "tomato", "onion"],
-        "hh:layer_2": ["none", "bacon", "lettuce", "tomato", "onion"],
-        "hh:layer_3": ["none", "bacon", "lettuce", "tomato", "onion"]
+        "hh:layer_1": ["none", "bacon", "lettuce", "tomato", "onion", "butter", "peanut_butter"],
+        "hh:layer_2": ["none", "bacon", "lettuce", "tomato", "onion", "butter", "peanut_butter"],
+        "hh:layer_3": ["none", "bacon", "lettuce", "tomato", "onion", "butter", "peanut_butter"]
       }
     },
     "components": {
@@ -24,14 +24,20 @@
           "layer_1_lettuce": "q.block_state('hh:layer_1') == 'lettuce'",
           "layer_1_tomato": "q.block_state('hh:layer_1') == 'tomato'",
           "layer_1_onion": "q.block_state('hh:layer_1') == 'onion'",
+          "layer_1_butter": "q.block_state('hh:layer_1') == 'butter'",
+          "layer_1_peanut_butter": "q.block_state('hh:layer_1') == 'peanut_butter'",
           "layer_2_bacon": "q.block_state('hh:layer_2') == 'bacon'",
           "layer_2_lettuce": "q.block_state('hh:layer_2') == 'lettuce'",
           "layer_2_tomato": "q.block_state('hh:layer_2') == 'tomato'",
           "layer_2_onion": "q.block_state('hh:layer_2') == 'onion'",
+          "layer_2_butter": "q.block_state('hh:layer_2') == 'butter'",
+          "layer_2_peanut_butter": "q.block_state('hh:layer_2') == 'peanut_butter'",
           "layer_3_bacon": "q.block_state('hh:layer_3') == 'bacon'",
           "layer_3_lettuce": "q.block_state('hh:layer_3') == 'lettuce'",
           "layer_3_tomato": "q.block_state('hh:layer_3') == 'tomato'",
-          "layer_3_onion": "q.block_state('hh:layer_3') == 'onion'"
+          "layer_3_onion": "q.block_state('hh:layer_3') == 'onion'",
+          "layer_3_butter": "q.block_state('hh:layer_3') == 'butter'",
+          "layer_3_peanut_butter": "q.block_state('hh:layer_3') == 'peanut_butter'"
         }
       },
       "minecraft:material_instances": {

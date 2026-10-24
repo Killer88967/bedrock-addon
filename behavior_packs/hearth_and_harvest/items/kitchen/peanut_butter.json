@@ -1,0 +1,15 @@
+{
+  "format_version": "1.26.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hh:peanut_butter",
+      "menu_category": { "category": "items" }
+    },
+    "components": {
+      "hh:spread_placer": { "block": "hh:peanut_butter_jar" },
+      "minecraft:icon": { "textures": { "default": "hh_peanut_butter" } },
+      "minecraft:max_stack_size": 1,
+      "minecraft:durability": { "max_durability": 4, "damage_chance": { "min": 0, "max": 0 } }
+    }
+  }
+}

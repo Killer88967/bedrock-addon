@@ -4,6 +4,7 @@
   "private": true,
   "type": "commonjs",
   "license": "Apache-2.0",
+  "packageManager": "pnpm@12.15.0",
   "scripts": {
     "lint": "just-scripts lint",
     "lint:fix": "just-scripts lint --fix",

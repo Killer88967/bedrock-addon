@@ -1,0 +1,14 @@
+{
+  "format_version": "1.26.50",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "hh:empty_butter_dish" },
+    "tags": ["crafting_table"],
+    "unlock": [{ "item": "minecraft:white_terracotta" }],
+    "pattern": [" G ", "TTT"],
+    "key": {
+      "G": { "item": "minecraft:glass" },
+      "T": { "item": "minecraft:white_terracotta" }
+    },
+    "result": { "item": "hh:empty_butter_dish" }
+  }
+}
