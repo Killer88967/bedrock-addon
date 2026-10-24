@@ -1,0 +1,33 @@
+{
+  "format_version": "1.26.50",
+  "minecraft:block": {
+    "description": {
+      "identifier": "hh:butter_churn",
+      "menu_category": { "category": "items" },
+      "states": {
+        "hh:contents": ["none", "milk", "peanuts"],
+        "hh:progress": [0, 1, 2, 3, 4, 5]
+      }
+    },
+    "components": {
+      "hh:churn": {},
+      "minecraft:geometry": {
+        "identifier": "geometry.hh.butter_churn",
+        "bone_visibility": {
+          "handle_up": "math.mod(q.block_state('hh:progress'), 2) == 0",
+          "handle_down": "math.mod(q.block_state('hh:progress'), 2) == 1"
+        }
+      },
+      "minecraft:material_instances": {
+        "*": { "texture": "hh_butter_churn", "render_method": "opaque" }
+      },
+      "minecraft:collision_box": { "origin": [-4, 0, -4], "size": [8, 11, 8] },
+      "minecraft:selection_box": { "origin": [-4, 0, -4], "size": [8, 16, 8] },
+      "minecraft:destructible_by_mining": { "seconds_to_destroy": 1 },
+      "minecraft:flammable": { "catch_chance_modifier": 5, "destroy_chance_modifier": 20 },
+      "minecraft:light_dampening": 0,
+      "minecraft:placement_filter": { "conditions": [{ "allowed_faces": ["up"] }] },
+      "minecraft:tags": ["minecraft:is_axe_item_destructible"]
+    }
+  }
+}

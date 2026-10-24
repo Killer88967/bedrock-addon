@@ -65,6 +65,9 @@
     "hh_toast": {
       "textures": "textures/items/foods/toast"
     },
+    "hh_buttered_toast": {
+      "textures": "textures/items/foods/buttered_toast"
+    },
     "hh_sandwich": {
       "textures": "textures/items/foods/sandwich"
     },
@@ -88,6 +91,12 @@
     },
     "hh_toasted_blt": {
       "textures": "textures/items/foods/toasted_blt"
+    },
+    "hh_butter": {
+      "textures": "textures/items/kitchen/butter"
+    },
+    "hh_peanut_butter": {
+      "textures": "textures/items/foods/peanut_butter"
     }
   }
 }

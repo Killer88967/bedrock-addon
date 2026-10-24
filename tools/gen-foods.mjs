@@ -23,9 +23,18 @@ const FOODS = [
   { id: "lettuce_leaf", name: "Lettuce Leaf", nutrition: 1, saturation: 0.3, compost: 50 },
   { id: "bread_slice", name: "Bread Slice", nutrition: 2, saturation: 0.6, compost: 50 },
   { id: "toast", name: "Toast", nutrition: 3, saturation: 0.6 },
+  { id: "buttered_toast", name: "Buttered Toast", nutrition: 5, saturation: 0.7 },
   { id: "bacon", name: "Raw Bacon", nutrition: 1, saturation: 0.3 },
   { id: "cooked_bacon", name: "Cooked Bacon", nutrition: 3, saturation: 0.8 },
   { id: "roasted_peanuts", name: "Roasted Peanuts", nutrition: 3, saturation: 0.6 },
+  {
+    id: "peanut_butter",
+    name: "Peanut Butter",
+    nutrition: 4,
+    saturation: 0.8,
+    returns: "hh:glass_jar",
+    stack: 16,
+  },
   {
     id: "garden_salad",
     name: "Garden Salad",

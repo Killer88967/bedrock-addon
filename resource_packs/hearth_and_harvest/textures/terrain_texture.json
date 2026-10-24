@@ -10,6 +10,9 @@
     "hh_toaster": {
       "textures": "textures/blocks/kitchen/toaster"
     },
+    "hh_butter_churn": {
+      "textures": "textures/blocks/kitchen/butter_churn"
+    },
     "hh_tomato_crop_stage_0": {
       "textures": "textures/blocks/crops/tomato_stage_0"
     },

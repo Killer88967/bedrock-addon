@@ -6,6 +6,9 @@
   "hh:toaster": {
     "sound": "metal"
   },
+  "hh:butter_churn": {
+    "sound": "wood"
+  },
   "hh:tomato_crop": {
     "sound": "grass"
   },

@@ -1,0 +1,15 @@
+{
+  "format_version": "1.26.50",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "hh:butter_churn" },
+    "tags": ["crafting_table"],
+    "unlock": [{ "tag": "minecraft:planks" }],
+    "pattern": [" S ", "PIP", "PPP"],
+    "key": {
+      "S": { "item": "minecraft:stick" },
+      "P": { "tag": "minecraft:planks" },
+      "I": { "item": "minecraft:iron_ingot" }
+    },
+    "result": { "item": "hh:butter_churn" }
+  }
+}
