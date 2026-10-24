@@ -12,10 +12,10 @@
   "hh:butter_churn": {
     "sound": "wood"
   },
-  "hh_butter_dish": {
+  "hh:butter_dish": {
     "sound": "stone"
   },
-  "hh_peanut_butter_jar": {
+  "hh:peanut_butter_jar": {
     "sound": "glass"
   },
   "hh:tomato_crop": {
